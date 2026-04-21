@@ -1,0 +1,989 @@
+[
+  {
+    "name": "medium decimator",
+    "effects": [
+      "decimator"
+    ],
+    "params": [
+      [
+        0.3,
+        0.15
+      ]
+    ],
+    "description": "moderate bit-crushing and downsampling; noticeable digital character and lo-fi texture"
+  },
+  {
+    "name": "intense JFET distortion",
+    "effects": [
+      "jfet"
+    ],
+    "params": [
+      [
+        0.9,
+        1.0,
+        0.2,
+        0.2
+      ]
+    ],
+    "description": "aggressive JFET distortion with maximum drive and grit; thick, saturated sustain"
+  },
+  {
+    "name": "medium BJT distortion",
+    "effects": [
+      "bjt"
+    ],
+    "params": [
+      [
+        0.5,
+        0.6,
+        0.5,
+        0.5,
+        0.4
+      ]
+    ],
+    "description": "moderate BJT distortion with asymmetric clipping; warm, musical sustain"
+  },
+  {
+    "name": "subtle tremolo",
+    "effects": [
+      "tremolo"
+    ],
+    "params": [
+      [
+        0.3,
+        2
+      ]
+    ],
+    "description": "gentle amplitude modulation at 2Hz; subtle breathing pulsation"
+  },
+  {
+    "name": "intense soft clip",
+    "effects": [
+      "softclip"
+    ],
+    "params": [
+      [
+        0.95,
+        0.2
+      ]
+    ],
+    "description": "aggressive soft clipping with bright tone; thick saturation with preserved harmonics"
+  },
+  {
+    "name": "medium chorus",
+    "effects": [
+      "chorus"
+    ],
+    "params": [
+      [
+        15,
+        0.3,
+        0.8
+      ]
+    ],
+    "description": "classic chorus effect with moderate depth; lush and dimensional sound"
+  },
+  {
+    "name": "subtle CMOS distortion",
+    "effects": [
+      "cmos"
+    ],
+    "params": [
+      [
+        0.1,
+        0.2,
+        0.1,
+        0.7,
+        0.1,
+        0.6
+      ]
+    ],
+    "description": "mild CMOS gate distortion; harmonically rich with controlled aggression"
+  },
+  {
+    "name": "pitch shift down fifth",
+    "effects": [
+      "pitchshifter"
+    ],
+    "params": [
+      [
+        0.5,
+        0.5,
+        -0.4,
+        0.7
+      ]
+    ],
+    "description": "pitch shifted down a fifth with 70% mix; deep harmonizing effect"
+  },
+  {
+    "name": "aggressive hard clip",
+    "effects": [
+      "hardclip"
+    ],
+    "params": [
+      [
+        0.9,
+        0.2,
+        0.8
+      ]
+    ],
+    "description": "extreme hard clipping with bright top; raw, harsh distortion with binary square-wave character"
+  },
+  {
+    "name": "intense phaser",
+    "effects": [
+      "phaser"
+    ],
+    "params": [
+      [
+        0.8,
+        2000,
+        1.5,
+        0.8
+      ]
+    ],
+    "description": "aggressive phaser with heavy feedback and fast sweep; extreme comb-filter effect"
+  },
+  {
+    "name": "long reverse delay",
+    "effects": [
+      "reversedelay"
+    ],
+    "params": [
+      [
+        800,
+        0.8,
+        0.7
+      ]
+    ],
+    "description": "800ms reverse delay with extreme feedback; long backwards echoes creating complex rhythms"
+  },
+  {
+    "name": "presence peak EQ",
+    "effects": [
+      "eq"
+    ],
+    "params": [
+      [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.6,
+        0.7,
+        0.65,
+        0.5
+      ]
+    ],
+    "description": "10-band EQ with presence peak in upper midrange; cuts through mix with clarity and bite"
+  },
+  {
+    "name": "medium autowah",
+    "effects": [
+      "autowah"
+    ],
+    "params": [
+      [
+        0.6,
+        0.6,
+        0.5
+      ]
+    ],
+    "description": "moderate autowah with noticeable wah sweep; good for funk and expressive playing"
+  },
+  {
+    "name": "medium JFET distortion",
+    "effects": [
+      "jfet"
+    ],
+    "params": [
+      [
+        0.5,
+        0.6,
+        0.4,
+        0.5
+      ]
+    ],
+    "description": "moderate JFET distortion with soft-knee characteristics; smooth, responsive overdrive tone"
+  },
+  {
+    "name": "reverse delay",
+    "effects": [
+      "reversedelay"
+    ],
+    "params": [
+      [
+        360,
+        0.2,
+        0.5
+      ]
+    ],
+    "description": "reverse delay with a 360ms delay time, low feedback, and 50% mix"
+  },
+  {
+    "name": "hardclipped v",
+    "effects": [
+      "hard_clip",
+      "eq"
+    ],
+    "params": [
+      [
+        0.9,
+        0.5,
+        0.5
+      ],
+      [
+        1,
+        0.5,
+        0,
+        -0.5,
+        0,
+        0,
+        -0.5,
+        0,
+        0.5,
+        1
+      ]
+    ],
+    "description": "hard clipping distortion with a v-shaped eq"
+  },
+  {
+    "name": "short delay",
+    "effects": [
+      "delay"
+    ],
+    "params": [
+      [
+        125,
+        0.3,
+        0.5
+      ]
+    ],
+    "description": "125ms delay with light feedback and 50% mix; sixteenth note delay at 120bpm"
+  },
+  {
+    "name": "medium flanger",
+    "effects": [
+      "flanger"
+    ],
+    "params": [
+      [
+        8,
+        0.3,
+        0.5
+      ]
+    ],
+    "description": "moderate flanger sweep; classic 70s-style dimensional jet effect"
+  },
+  {
+    "name": "subtle wavefoldr",
+    "effects": [
+      "wavefoldr"
+    ],
+    "params": [
+      [
+        0.3,
+        0.5
+      ]
+    ],
+    "description": "mild wave folding distortion; gentle harmonic enhancement with subtle grit"
+  },
+  {
+    "name": "subtle opamp distortion",
+    "effects": [
+      "opamp"
+    ],
+    "params": [
+      [
+        0.2,
+        0.5,
+        0.5,
+        0.3,
+        0.6
+      ]
+    ],
+    "description": "mild hybrid soft/hard clipping distortion; smooth saturation with controlled punch"
+  },
+  {
+    "name": "mild soft clip",
+    "effects": [
+      "softclip"
+    ],
+    "params": [
+      [
+        0.2,
+        0.6
+      ]
+    ],
+    "description": "gentle soft clipping with smooth tone; subtle tape-like saturation"
+  },
+  {
+    "name": "subtle JFET distortion",
+    "effects": [
+      "jfet"
+    ],
+    "params": [
+      [
+        0.2,
+        0.3,
+        0.5,
+        0.6
+      ]
+    ],
+    "description": "mild JFET transistor distortion; smooth saturation with natural touch-sensitivity"
+  },
+  {
+    "name": "long delay",
+    "effects": [
+      "delay"
+    ],
+    "params": [
+      [
+        800,
+        0.7,
+        0.7
+      ]
+    ],
+    "description": "800ms delay with high feedback and 70% mix; half note delay creating rhythmic complexity"
+  },
+  {
+    "name": "360ms delay",
+    "effects": [
+      "delay"
+    ],
+    "params": [
+      [
+        360,
+        0.2,
+        0.5
+      ]
+    ],
+    "description": "360ms delay with low feedback and 50% mix; dotted eighth delay at 120bpm"
+  },
+  {
+    "name": "intense CMOS distortion",
+    "effects": [
+      "cmos"
+    ],
+    "params": [
+      [
+        0.8,
+        1.0,
+        0.7,
+        0.5,
+        0.6,
+        0.3
+      ]
+    ],
+    "description": "aggressive CMOS distortion with rich harmonics; chaotic and complex overtones"
+  },
+  {
+    "name": "subtle phaser",
+    "effects": [
+      "phaser"
+    ],
+    "params": [
+      [
+        0.2,
+        500,
+        0.3,
+        0.5
+      ]
+    ],
+    "description": "gentle sweeping phaser; subtle notch filter sweep with smooth modulation"
+  },
+  {
+    "name": "subtle flanger",
+    "effects": [
+      "flanger"
+    ],
+    "params": [
+      [
+        3,
+        0.1,
+        0.2
+      ]
+    ],
+    "description": "gentle sweeping flanger effect; subtle jet-like tone with minimal width"
+  },
+  {
+    "name": "medium phaser",
+    "effects": [
+      "phaser"
+    ],
+    "params": [
+      [
+        0.5,
+        1000,
+        0.7,
+        0.5
+      ]
+    ],
+    "description": "moderate phaser with noticeable sweep; classic 70s-style filtered chorus effect"
+  },
+  {
+    "name": "intense opamp distortion",
+    "effects": [
+      "opamp"
+    ],
+    "params": [
+      [
+        0.9,
+        0.7,
+        0.3,
+        0.8,
+        0.2
+      ]
+    ],
+    "description": "aggressive opamp distortion with hard clipping emphasis; raw, cutting lead tone"
+  },
+  {
+    "name": "pitch shift slight detune",
+    "effects": [
+      "pitchshifter"
+    ],
+    "params": [
+      [
+        0.5,
+        0.5,
+        0.1,
+        0.3
+      ]
+    ],
+    "description": "slight pitch detune with 30% mix; subtle chorus-like thickening effect"
+  },
+  {
+    "name": "mild decimator",
+    "effects": [
+      "decimator"
+    ],
+    "params": [
+      [
+        0.15,
+        0.05
+      ]
+    ],
+    "description": "subtle bit-crushing effect; adds a touch of digital grit to tone"
+  },
+  {
+    "name": "deep flanger",
+    "effects": [
+      "flanger"
+    ],
+    "params": [
+      [
+        15,
+        0.6,
+        1.0
+      ]
+    ],
+    "description": "intense sweeping flanger with heavy feedback; extreme spacious jet effect"
+  },
+  {
+    "name": "mild hard clip",
+    "effects": [
+      "hardclip"
+    ],
+    "params": [
+      [
+        0.2,
+        0.6,
+        0.5
+      ]
+    ],
+    "description": "gentle hard clipping with smooth tone; subtle added aggression and edge"
+  },
+  {
+    "name": "intense autowah",
+    "effects": [
+      "autowah"
+    ],
+    "params": [
+      [
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "description": "extreme autowah sweep; very pronounced and aggressive dynamic wah effect"
+  },
+  {
+    "name": "subtle BJT distortion",
+    "effects": [
+      "bjt"
+    ],
+    "params": [
+      [
+        0.2,
+        0.4,
+        0.3,
+        0.5,
+        0.5
+      ]
+    ],
+    "description": "mild BJT transistor distortion; warm harmonic saturation with smooth tone"
+  },
+  {
+    "name": "treble cut EQ",
+    "effects": [
+      "eq"
+    ],
+    "params": [
+      [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ]
+    ],
+    "description": "10-band EQ with reduced high frequencies; smooth, warm, and reduced harshness"
+  },
+  {
+    "name": "extreme decimator",
+    "effects": [
+      "decimator"
+    ],
+    "params": [
+      [
+        0.6,
+        0.4
+      ]
+    ],
+    "description": "extreme bit-crushing and severe downsampling; very lo-fi and crunchy digital artifacts"
+  },
+  {
+    "name": "medium tremolo",
+    "effects": [
+      "tremolo"
+    ],
+    "params": [
+      [
+        0.6,
+        4
+      ]
+    ],
+    "description": "moderate amplitude modulation at 4Hz; classic pumping effect with depth"
+  },
+  {
+    "name": "subtle reverb",
+    "effects": [
+      "reverb"
+    ],
+    "params": [
+      [
+        0.3,
+        8000
+      ]
+    ],
+    "description": "light reverb with high-pass tone; subtle room ambience without harshness"
+  },
+  {
+    "name": "v eq",
+    "effects": [
+      "eq"
+    ],
+    "params": [
+      [
+        1,
+        0.5,
+        0,
+        -0.5,
+        0,
+        0,
+        -0.5,
+        0,
+        0.5,
+        1
+      ]
+    ],
+    "description": "v-shaped 10 band eq"
+  },
+  {
+    "name": "light overdrive",
+    "effects": [
+      "overdrive"
+    ],
+    "params": [
+      [
+        0.3
+      ]
+    ],
+    "description": "subtle overdrive; gentle warm compression and harmonic enhancement"
+  },
+  {
+    "name": "medium hard clip",
+    "effects": [
+      "hardclip"
+    ],
+    "params": [
+      [
+        0.5,
+        0.5,
+        0.3
+      ]
+    ],
+    "description": "moderate hard clipping with balanced tone; crisp distortion with defined edges"
+  },
+  {
+    "name": "medium reverb",
+    "effects": [
+      "reverb"
+    ],
+    "params": [
+      [
+        0.5,
+        6000
+      ]
+    ],
+    "description": "moderate reverb with balanced tone; classic plate reverb ambience"
+  },
+  {
+    "name": "heavy fuzz",
+    "effects": [
+      "bjt"
+    ],
+    "params": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "description": "heavy bjt fuzz tone with everything dimed"
+  },
+  {
+    "name": "medium chorus",
+    "effects": [
+      "chorus"
+    ],
+    "params": [
+      [
+        2,
+        0.6,
+        0.9
+      ]
+    ],
+    "description": "medium speed chorus with a slight wobble"
+  },
+  {
+    "name": "max autowah",
+    "effects": [
+      "autowah"
+    ],
+    "params": [
+      [
+        100,
+        1,
+        1
+      ]
+    ],
+    "description": "maximum wah"
+  },
+  {
+    "name": "medium CMOS distortion",
+    "effects": [
+      "cmos"
+    ],
+    "params": [
+      [
+        0.4,
+        0.5,
+        0.3,
+        0.6,
+        0.3,
+        0.5
+      ]
+    ],
+    "description": "moderate CMOS distortion with harmonic emphasis; gritty yet musical"
+  },
+  {
+    "name": "heavy overdrive",
+    "effects": [
+      "overdrive"
+    ],
+    "params": [
+      [
+        0.95
+      ]
+    ],
+    "description": "intense overdrive; thick, compressed sustain with full harmonic saturation"
+  },
+  {
+    "name": "short reverse delay",
+    "effects": [
+      "reversedelay"
+    ],
+    "params": [
+      [
+        125,
+        0.4,
+        0.5
+      ]
+    ],
+    "description": "125ms reverse delay with moderate feedback; backwards echoes at sixteenth note"
+  },
+  {
+    "name": "medium soft clip",
+    "effects": [
+      "softclip"
+    ],
+    "params": [
+      [
+        0.5,
+        0.5
+      ]
+    ],
+    "description": "moderate soft clipping with balanced tone; warm, musical saturation"
+  },
+  {
+    "name": "medium reverse delay",
+    "effects": [
+      "reversedelay"
+    ],
+    "params": [
+      [
+        375,
+        0.6,
+        0.6
+      ]
+    ],
+    "description": "375ms reverse delay with heavy feedback; backwards echoes at dotted eighth note"
+  },
+  {
+    "name": "medium delay",
+    "effects": [
+      "delay"
+    ],
+    "params": [
+      [
+        375,
+        0.5,
+        0.6
+      ]
+    ],
+    "description": "375ms delay with moderate feedback and 60% mix; dotted eighth delay at 120bpm"
+  },
+  {
+    "name": "medium overdrive",
+    "effects": [
+      "overdrive"
+    ],
+    "params": [
+      [
+        0.6
+      ]
+    ],
+    "description": "moderate overdrive; punchy tone with noticeable saturation and character"
+  },
+  {
+    "name": "heavy reverb",
+    "effects": [
+      "reverb"
+    ],
+    "params": [
+      [
+        0.6,
+        10000
+      ]
+    ],
+    "description": "heavy reverb that sounds far away"
+  },
+  {
+    "name": "medium opamp distortion",
+    "effects": [
+      "opamp"
+    ],
+    "params": [
+      [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    ],
+    "description": "balanced hybrid distortion with equal soft and hard clipping; articulate overdrive tone"
+  },
+  {
+    "name": "intense tremolo",
+    "effects": [
+      "tremolo"
+    ],
+    "params": [
+      [
+        1.0,
+        8
+      ]
+    ],
+    "description": "extreme amplitude modulation at 8Hz; stuttering, rhythmic helicopter-like effect"
+  },
+  {
+    "name": "subtle chorus",
+    "effects": [
+      "chorus"
+    ],
+    "params": [
+      [
+        5,
+        0.1,
+        0.5
+      ]
+    ],
+    "description": "barely noticeable chorus effect; adds slight width and shimmer to tone"
+  },
+  {
+    "name": "intense wavefoldr",
+    "effects": [
+      "wavefoldr"
+    ],
+    "params": [
+      [
+        1.0,
+        0.3
+      ]
+    ],
+    "description": "aggressive wave folding with extreme harmonic complexity; chaotic and synth-like"
+  },
+  {
+    "name": "bass boost EQ",
+    "effects": [
+      "eq"
+    ],
+    "params": [
+      [
+        0.5,
+        0.5,
+        0.6,
+        0.4,
+        0.4,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    ],
+    "description": "10-band EQ with emphasis on bass frequencies; enhances low-end warmth and depth"
+  },
+  {
+    "name": "medium wavefoldr",
+    "effects": [
+      "wavefoldr"
+    ],
+    "params": [
+      [
+        0.6,
+        0.5
+      ]
+    ],
+    "description": "moderate wave folding with complex harmonics; warm, rich distortion character"
+  },
+  {
+    "name": "mid-heavy overdrive",
+    "effects": [
+      "overdrive"
+    ],
+    "params": [
+      [
+        0.7
+      ]
+    ],
+    "description": "medium-heavy overdrive set to 70% gain"
+  },
+  {
+    "name": "intense BJT distortion",
+    "effects": [
+      "bjt"
+    ],
+    "params": [
+      [
+        0.9,
+        0.9,
+        0.8,
+        0.3,
+        0.2
+      ]
+    ],
+    "description": "aggressive BJT distortion; heavy saturation with bright attack and harmonic content"
+  },
+  {
+    "name": "subtle autowah",
+    "effects": [
+      "autowah"
+    ],
+    "params": [
+      [
+        0.3,
+        0.4,
+        0.3
+      ]
+    ],
+    "description": "gentle wah effect that follows the input dynamics; subtle tone modulation"
+  },
+  {
+    "name": "pitch shift up octave",
+    "effects": [
+      "pitchshifter"
+    ],
+    "params": [
+      [
+        0.5,
+        0.5,
+        1.0,
+        0.7
+      ]
+    ],
+    "description": "pitch shifted up one octave with 70% mix; thick doubled effect"
+  },
+  {
+    "name": "slow flanger",
+    "effects": [
+      "flanger"
+    ],
+    "params": [
+      [
+        2,
+        0.7,
+        0.1
+      ]
+    ],
+    "description": "slow flanger with a medium-high feedback"
+  },
+  {
+    "name": "deep chorus",
+    "effects": [
+      "chorus"
+    ],
+    "params": [
+      [
+        25,
+        0.5,
+        1.2
+      ]
+    ],
+    "description": "thick, spacious chorus with long delay modulation; dreamy and washy"
+  },
+  {
+    "name": "heavy reverb",
+    "effects": [
+      "reverb"
+    ],
+    "params": [
+      [
+        0.8,
+        3000
+      ]
+    ],
+    "description": "thick reverb with dark tone; large cathedral-like ambience with long tail"
+  }
+]
