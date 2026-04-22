@@ -43,7 +43,7 @@ def parse_preset_file(filepath):
         print(f"WARNING: Json parse error in {filepath.name}: {e}, skipping")
         return None
     
-def encode(data_dir='data'):
+def encode(data_dir='dependencies/Example-DaisySeed-Presets/example_presets'):
     # Collect all header files in the data/ folder
     data_dir_ = Path(data_dir)
     preset_files = list(data_dir_.glob('*.h'))

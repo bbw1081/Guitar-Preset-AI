@@ -1,0 +1,3 @@
+[submodule "dependencies/Example-DaisySeed-Presets"]
+	path = dependencies/Example-DaisySeed-Presets
+	url = https://github.com/bbw1081/Example-DaisySeed-Presets
