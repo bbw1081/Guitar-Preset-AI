@@ -43,32 +43,38 @@ def parse_preset_file(filepath):
         print(f"WARNING: Json parse error in {filepath.name}: {e}, skipping")
         return None
     
-# Collect all header files in the data/ folder
-data_dir = Path('data')
-preset_files = list(data_dir.glob('*.h'))
-print(f"Found {len(preset_files)} preset files")
+def encode(data_dir='data'):
+    # Collect all header files in the data/ folder
+    data_dir_ = Path(data_dir)
+    preset_files = list(data_dir_.glob('*.h'))
+    print(f"Found {len(preset_files)} preset files")
 
-#parse each file
-presets = []
-for filepath in preset_files:
-    preset = parse_preset_file(filepath)
-    if preset is not None:
-        presets.append(preset)
+    #parse each file
+    presets = []
+    for filepath in preset_files:
+        preset = parse_preset_file(filepath)
+        if preset is not None:
+            presets.append(preset)
 
-print(f"Successfully parsed {len(presets)} presets")
+    print(f"Successfully parsed {len(presets)} presets")
 
-#save all presets into single json file
-with open('data/presets_combined.json', 'w') as f:
-    json.dump(presets, f, indent=2)
-print("Saved combined dataset to data/presets_combined.json")
+    #save all presets into single json file
+    with open('data/presets_combined.json', 'w') as f:
+        json.dump(presets, f, indent=2)
+    print("Saved combined dataset to data/presets_combined.json")
 
-#extract and encode descriptions
-descriptions = [p['description'] for p in presets]
+    #extract and encode descriptions
+    descriptions = [p['description'] for p in presets]
 
-encoder = SentenceTransformer('all-MiniLM-L6-v2')
-embeddings = encoder.encode(descriptions)
+    encoder = SentenceTransformer('all-MiniLM-L6-v2')
+    embeddings = encoder.encode(descriptions)
 
-print(f"Each description is now shape: {embeddings[0].shape}")
+    print(f"Each description is now shape: {embeddings[0].shape}")
 
-np.save('data/embeddings.npy', embeddings)
-print("Saved embeddings to data/embeddings.npy")
+    np.save('data/embeddings.npy', embeddings)
+    print("Saved embeddings to data/embeddings.npy")
+
+    return presets, embeddings
+
+if __name__ == '__main__':
+    encode()
