@@ -13,7 +13,7 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.heav
 """
 
 import pickle
@@ -165,16 +165,17 @@ const char preset[] = R"({{
 if __name__ == '__main__':
     print("\n\nGuitar Preset Generator")
     print("Copyright (C) 2026  Richard Wilkinson")
-    print("See LICENSE for more info\n")
+    print("See LICENSE for more info")
 
     while True:
-        description = input("Type a description to generate a preset, or 'quit' to exit: ").strip()
+        description = input("\nType a description to generate a preset, or 'quit' to exit: ").strip()
         if description.lower() in ('quit', 'exit', 'q'):
             break
         if not description:
             continue
 
         name = input("Preset name (or press Enter to use description): ").strip()
+        print()
         if not name:
             name = description[:32]
 
