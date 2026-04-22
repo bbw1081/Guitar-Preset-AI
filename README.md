@@ -1,7 +1,9 @@
 # Guitar-Preset-AI
-AI Model for creating presets for my Daisy Seed MultiFX Guitar Pedal
+AI Model for generating presets for this digital guitar pedal: https://github.com/bbw1081/DaisySeed-MultiFXPedal
 
 Still very early, doesn't work very well because it needs a lot more training data
+
+Right now it only works with text dcescriptions of presets
 
 ## Installing Dependencies
 
