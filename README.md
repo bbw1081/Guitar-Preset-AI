@@ -7,11 +7,13 @@ Right now it only works with text dcescriptions of presets
 
 ## Installing Dependencies
 
-1. in the terminal run `python -m venv .venv`
+1. in the terminal run `git submodule update --init`
 
-2. in the terminal run `source .venv/bin/activate`
+2. in the terminal run `python -m venv .venv`
 
-3. in the terminal run `pip install -r requirements.txt`
+3. in the terminal run `source .venv/bin/activate`
+
+4. in the terminal run `pip install -r requirements.txt`
 
 ## Using the model
 
