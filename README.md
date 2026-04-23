@@ -7,16 +7,30 @@ Right now it only works with text dcescriptions of presets
 
 ## Installing Dependencies
 
-1. in the terminal run `git submodule update --init`
+In the terminal run the following commands:
 
-2. in the terminal run `python -m venv .venv`
+1. `git submodule update --init`
 
-3. in the terminal run `source .venv/bin/activate`
+2. `python -m venv .venv`
 
-4. in the terminal run `pip install -r requirements.txt`
+3. `source .venv/bin/activate`
+
+4. `pip install -r requirements.txt`
+
+5. `npm install`
 
 ## Using the model
 
-1. run pipeline.py
+In the terminal run the following commands:
 
-3. run and interact with predict.py
+1. `python3 pipeline.py`
+
+To use terminal interface:
+
+2. `python3 predict.py`
+
+To use web app:
+
+2. `uvicorn api:app` with optional `--reload` argument
+
+3. `cd guitar-preset-ui/ && ng serve --open`

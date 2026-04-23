@@ -1,0 +1,28 @@
+<div class="preset-display">
+    <h2>{{ preset.name }}</h2>
+    <p class="description">{{ preset.description }}</p>
+
+    <div class="effects">
+        <div
+            class="effect"
+            *ngFor="let effect of preset.effects; let i = index">
+            <h3>{{ effect}}</h3>
+            <div class="params">
+                <span
+                    class="param"
+                    *ngFor="let param of preset.params[i]">
+                    {{ formatParam(param) }}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="actions">
+        <button class="download" (click)="downloadHeader()">
+            Download Preset File
+        </button>
+        <button class="secondary" (click)="generateAnother.emit()">
+            Generate Another Preset
+        </button>
+    </div>
+</div>

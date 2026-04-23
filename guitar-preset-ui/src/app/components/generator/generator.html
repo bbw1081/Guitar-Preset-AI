@@ -1,0 +1,36 @@
+<div class="generator">
+    <div class="form" *ngIf="!preset">
+        <h2>Describe your tone</h2>
+
+        <label for="description">Description</label>
+        <textarea
+            id="description"
+            [(ngModel)]="description"
+            placeholder="warm bluesy overdrive with light reverb and tremolo"
+            rows="3">
+        </textarea>
+
+        <label for="name">Preset Name <span class="optional">(optional)</span></label>
+        <input
+            id="name"
+            type="text"
+            [(ngModel)]="presetName"
+            placeholder="e.g. Blues Tone"
+        />
+
+        <button
+            (click)="generate()"
+            [disabled]="loading || !description.trim()"
+        >
+            {{loading ? 'Generating...' : 'Generate Preset'}}
+        </button>
+
+        <p class="error" *ngIf="error"> {{error}} </p>
+    </div>
+
+    <app-preset-display
+        *ngIf="preset"
+        [preset]="preset"
+        (generateAnother)="reset()">
+    </app-preset-display>
+</div>
